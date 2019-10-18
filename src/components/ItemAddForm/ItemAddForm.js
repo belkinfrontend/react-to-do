@@ -10,12 +10,11 @@ class ItemAddForm extends Component {
     }
 
     onLabelChange = (e) => {
-        console.log(e.target.value);
         this.setState({
             label: e.target.value
         });
-
-
+        console.log(this.state.label);
+        console.log(e.target.value);
     };
 
     onSubmit = (e) => {
